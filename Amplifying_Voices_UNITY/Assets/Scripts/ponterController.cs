@@ -12,11 +12,11 @@ public class ponterController : MonoBehaviour
     public GameObject[] objectsSpawning;
     public GameObject soundParent;
     public GameObject projectileTransform;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -30,17 +30,21 @@ public class ponterController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && Time.time > clickFinish){
             Debug.Log("click 1");
             clickFinish = Time.time + clickCooldown;
-            Vector3 norm = pos.normalized;
+
+            Vector2 target = Camera.main.ScreenToWorldPoint( new Vector2(Input.mousePosition.x,  Input.mousePosition.y) );
+            Vector2 myPos = new Vector2(transform.position.x,transform.position.y + 1);
+            Vector2 direction = target - myPos;
+
+            direction.Normalize();
             //player.transform.position = norm;
             //player.GetComponent<Rigidbody2D>().AddForce(dir.normalized * Speed);
             int objectIndex = Random.Range(0, objectsSpawning.Length - 1);
             Debug.Log(transform.position);
-            GameObject bullet = Instantiate(objectsSpawning[objectIndex], projectileTransform.transform.position, Quaternion.identity);//, soundParent.transform);
-
-            //bullet.transform.forward = dir;            
+            GameObject bullet = Instantiate(objectsSpawning[objectIndex], projectileTransform.transform.position, Quaternion.Euler( 0, 0, Mathf.Atan2 ( direction.y, direction.x ) * Mathf.Rad2Deg ));//, soundParent.transform);
+            //bullet.transform.forward = dir;
             //bullet.transform.rotation = Quaternion.LookRotation(dir);
 
-            bullet.GetComponent<Rigidbody2D>().AddForce(dir * 10);
+            bullet.GetComponent<Rigidbody2D>().AddForce(10 * Vector3.forward, ForceMode2D.Impulse);
 
         }
     }

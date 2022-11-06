@@ -4,23 +4,46 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    float speed = 10.0f;
+    float speed = 7.0f;
     Rigidbody2D body;
-    bool grounded;
+    public Animator animator;
+
+    public bool grounded;
+    public bool facingRight;
 
     void Awake()
     {
-        body = GetComponent<Rigidbody2D>();
+        body = transform.GetComponent<Rigidbody2D>();
+        facingRight = true;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
+      body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
+
+
+      if (Input.GetAxis("Horizontal") > 0.1){
+        animator.SetBool("IsRunning", true);
+        if (!facingRight){
+          facingRight = true;
+          transform.localScale = new Vector3(1,1,1);
+        }
+      } else if (Input.GetAxis("Horizontal") < -0.1){
+        animator.SetBool("IsRunning", true);
+          if (facingRight){
+            facingRight = false;
+            transform.localScale = new Vector3(-1,1,1);
+          }
+      }
+      else {
+        animator.SetBool("IsRunning", false);
+      }
 
         if (Input.GetKey(KeyCode.Space) && grounded){
             body.velocity = new Vector2(body.velocity.x, speed);
             grounded = false;
+            animator.SetBool("IsJumping", true);
         }
     }
 
@@ -29,5 +52,6 @@ public class playerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
             grounded = true;
+            animator.SetBool("IsJumping", false);
     }
 }

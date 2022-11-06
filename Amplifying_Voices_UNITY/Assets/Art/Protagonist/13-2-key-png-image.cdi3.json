@@ -1,0 +1,155 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup",
+			"Name": "UpperLeg1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup",
+			"Name": "LowerLeg1"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "ParamGroup",
+			"Name": "UpperLeg2"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "ParamGroup",
+			"Name": "LowerLeg2"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "ParamGroup2",
+			"Name": "Upperarm1"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "ParamGroup2",
+			"Name": "Lowerarm1"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "ParamGroup2",
+			"Name": "Upperarm2"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "ParamGroup2",
+			"Name": "Lowerarm2"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "Angle X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "Angle Y"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "Body X"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "Angle Z"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "Body Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "Body Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "Breath"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "Hair Move Back"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "BodyTilt"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "",
+			"Name": "Shoulders"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "Leg"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "Arm"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "protaggroup",
+			"Name": "protaggroup"
+		},
+		{
+			"Id": "armgroup",
+			"Name": "armgroup"
+		},
+		{
+			"Id": "neckgroup",
+			"Name": "neckgroup"
+		},
+		{
+			"Id": "leggroup",
+			"Name": "leggroup"
+		},
+		{
+			"Id": "uppertorsogroup",
+			"Name": "uppertorsogroup"
+		},
+		{
+			"Id": "hairgroup",
+			"Name": "hairgroup"
+		},
+		{
+			"Id": "armgroup2",
+			"Name": "armgroup2"
+		},
+		{
+			"Id": "lowerarm",
+			"Name": "lowerarm"
+		},
+		{
+			"Id": "leggroup2",
+			"Name": "leggroup2"
+		},
+		{
+			"Id": "lowerarm2",
+			"Name": "lowerarm2"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamAngleX",
+			"ParamAngleY"
+		]
+	]
+}

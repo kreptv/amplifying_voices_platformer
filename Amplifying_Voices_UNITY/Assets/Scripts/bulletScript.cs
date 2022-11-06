@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class bulletScript : MonoBehaviour
 {
+    float bulletSpeed = 0.02f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class bulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }

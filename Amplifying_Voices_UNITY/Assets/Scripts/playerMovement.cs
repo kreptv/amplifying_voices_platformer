@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
+    public GameManager gm;
+    public GameObject headWrapper;
+
     float speed = 7.0f;
     Rigidbody2D body;
     public Animator animator;
@@ -11,29 +14,34 @@ public class playerMovement : MonoBehaviour
     public bool grounded;
     public bool facingRight;
 
+
     void Awake()
     {
-        body = transform.GetComponent<Rigidbody2D>();
-        facingRight = true;
+
+      body = transform.GetComponent<Rigidbody2D>();
+      facingRight = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-      body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
 
 
-      if (Input.GetAxis("Horizontal") > 0.1){
+      if (Input.GetAxis("Horizontal") > 0.1 && (transform.position.x < gm.xMax-7)){
+        body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
         animator.SetBool("IsRunning", true);
         if (!facingRight){
           facingRight = true;
           transform.localScale = new Vector3(1,1,1);
+          headWrapper.transform.localScale = new Vector3(1,1,1);
         }
-      } else if (Input.GetAxis("Horizontal") < -0.1){
+      } else if (Input.GetAxis("Horizontal") < -0.1 && (transform.position.x > gm.xMin+7)){
+        body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
         animator.SetBool("IsRunning", true);
           if (facingRight){
             facingRight = false;
             transform.localScale = new Vector3(-1,1,1);
+            headWrapper.transform.localScale = new Vector3(-1,1,1);
           }
       }
       else {

@@ -39,7 +39,7 @@ public class ponterController : MonoBehaviour
             //player.transform.position = norm;
             //player.GetComponent<Rigidbody2D>().AddForce(dir.normalized * Speed);
             int objectIndex = Random.Range(0, objectsSpawning.Length - 1);
-            Debug.Log(transform.position);
+            //Debug.Log(transform.position);
             GameObject bullet = Instantiate(objectsSpawning[objectIndex], projectileTransform.transform.position, Quaternion.Euler( 0, 0, Mathf.Atan2 ( direction.y, direction.x ) * Mathf.Rad2Deg ));//, soundParent.transform);
             //bullet.transform.forward = dir;
             //bullet.transform.rotation = Quaternion.LookRotation(dir);

@@ -27,7 +27,7 @@ public class playerMovement : MonoBehaviour
     {
 
 
-      if (Input.GetAxis("Horizontal") > 0.1 && (transform.position.x < gm.xMax-7)){
+      if (Input.GetAxis("Horizontal") > 0.1/* && (transform.position.x < gm.xMax-7)*/){
         body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
         animator.SetBool("IsRunning", true);
         if (!facingRight){
@@ -35,7 +35,7 @@ public class playerMovement : MonoBehaviour
           transform.localScale = new Vector3(1,1,1);
           headWrapper.transform.localScale = new Vector3(1,1,1);
         }
-      } else if (Input.GetAxis("Horizontal") < -0.1 && (transform.position.x > gm.xMin+7)){
+      } else if (Input.GetAxis("Horizontal") < -0.1/* && (transform.position.x > gm.xMin+7)*/){
         body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
         animator.SetBool("IsRunning", true);
           if (facingRight){

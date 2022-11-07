@@ -1,0 +1,35 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "Angle X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "Angle Y"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "EyeOpen"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "impactjamcamera (1).psd"
+		},
+		{
+			"Id": "camera",
+			"Name": "camera"
+		},
+		{
+			"Id": "stemgroup",
+			"Name": "stemgroup"
+		}
+	]
+}

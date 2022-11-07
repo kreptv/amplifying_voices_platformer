@@ -1,0 +1,42 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "Angle X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "Angle Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "Angle Z"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "EyeOpen"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "camera",
+			"Name": "camera"
+		},
+		{
+			"Id": "stemgroup",
+			"Name": "stemgroup"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamAngleX",
+			"ParamAngleY"
+		]
+	]
+}

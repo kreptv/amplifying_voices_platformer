@@ -9,9 +9,6 @@ public class cameraEnemy :  MonoBehaviour
       public float xMin, xMax, yMin, yMax;
     public GameObject player;
 
-    public float xrange;
-    public float yrange;
-
     private float px = 0;
     private float py = 0;
 
@@ -44,11 +41,11 @@ public class cameraEnemy :  MonoBehaviour
         py = player.transform.position.y;
         var range1 = xMax - xMin;
         var range2 = 30 - (-30);
-        px = px*range2/range1 +xrange;
+        px = (((px - xMin) * range2) / range1) -30;
 
         range1 = yMax - yMin;
         range2 = 30 - (-30);
-        py = py*range2/range1 +yrange;
+        py = (((py - yMin) * range2) / range1) -30;
 
 
         x.Value = px;

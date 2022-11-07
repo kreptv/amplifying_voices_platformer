@@ -79,7 +79,7 @@ MonoBehaviour:
   xMax: 0
   yMin: 0
   yMax: 0
-  player: {fileID: 0}
+  player: {fileID: 6115467197310675934, guid: 38e3b1f09f7e048d38f2f718b2c86810, type: 3}
   camon: 0
 --- !u!114 &3594389374096473055
 MonoBehaviour:

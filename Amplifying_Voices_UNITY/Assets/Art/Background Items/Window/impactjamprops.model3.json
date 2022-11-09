@@ -1,0 +1,10 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "impactjamprops.moc3",
+		"Textures": [
+			"impactjamprops.1024/texture_00.png"
+		],
+		"DisplayInfo": "impactjamprops.cdi3.json"
+	}
+}

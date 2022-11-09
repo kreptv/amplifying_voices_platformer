@@ -1,0 +1,231 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup",
+			"Name": "UpperLeg1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup",
+			"Name": "LowerLeg1"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "ParamGroup",
+			"Name": "UpperLeg2"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "ParamGroup",
+			"Name": "LowerLeg2"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "Angle X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "Angle Y"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "Body X"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "Angle Z"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "Body Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "Body Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "Breath"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "Hair Move Back"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "BodyTilt"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "",
+			"Name": "Shoulders"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "Leg"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "Arm"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "impactjamnpc.psd"
+		},
+		{
+			"Id": "protaggroup",
+			"Name": "person"
+		},
+		{
+			"Id": "malenpc",
+			"Name": "malenpc"
+		},
+		{
+			"Id": "femalenpc",
+			"Name": "femalenpc"
+		},
+		{
+			"Id": "armgroup",
+			"Name": "armgroup"
+		},
+		{
+			"Id": "neckgroup",
+			"Name": "neckgroup"
+		},
+		{
+			"Id": "leggroup",
+			"Name": "leggroup"
+		},
+		{
+			"Id": "uppertorsogroup",
+			"Name": "uppertorsogroup"
+		},
+		{
+			"Id": "hairgroup",
+			"Name": "hairgroup"
+		},
+		{
+			"Id": "armgroup2",
+			"Name": "armgroup2"
+		},
+		{
+			"Id": "bangsgroup",
+			"Name": "bangsgroup"
+		},
+		{
+			"Id": "armgroup3",
+			"Name": "armgroup"
+		},
+		{
+			"Id": "neckgroup2",
+			"Name": "neckgroup"
+		},
+		{
+			"Id": "leggroup3",
+			"Name": "leggroup"
+		},
+		{
+			"Id": "uppertorsogroup2",
+			"Name": "uppertorsogroup"
+		},
+		{
+			"Id": "hairgroup2",
+			"Name": "hairgroup"
+		},
+		{
+			"Id": "bangsgroup2",
+			"Name": "bangsgroup"
+		},
+		{
+			"Id": "armgroup4",
+			"Name": "armgroup"
+		},
+		{
+			"Id": "neckgroup3",
+			"Name": "neckgroup"
+		},
+		{
+			"Id": "leggroup4",
+			"Name": "leggroup"
+		},
+		{
+			"Id": "uppertorsogroup3",
+			"Name": "uppertorsogroup"
+		},
+		{
+			"Id": "hairgroup5",
+			"Name": "hairgroup"
+		},
+		{
+			"Id": "lowerarm",
+			"Name": "lowerarm"
+		},
+		{
+			"Id": "leggroup2",
+			"Name": "leggroup2"
+		},
+		{
+			"Id": "lowerarm2",
+			"Name": "lowerarm2"
+		},
+		{
+			"Id": "lowerarmgroup",
+			"Name": "lowerarmgroup"
+		},
+		{
+			"Id": "hairgroup3",
+			"Name": "hairgroup2"
+		},
+		{
+			"Id": "hairgroup4",
+			"Name": "hairgroup3"
+		},
+		{
+			"Id": "hairgroup1",
+			"Name": "hairgroup1"
+		},
+		{
+			"Id": "lowerarmgroup2",
+			"Name": "lowerarmgroup"
+		},
+		{
+			"Id": "hairgroup6",
+			"Name": "hairgroup1"
+		},
+		{
+			"Id": "hairgroup7",
+			"Name": "hairgroup3"
+		},
+		{
+			"Id": "hairgroup8",
+			"Name": "hairgroup2"
+		},
+		{
+			"Id": "hairgroup9",
+			"Name": "hairgroup4"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamAngleX",
+			"ParamAngleY"
+		]
+	]
+}

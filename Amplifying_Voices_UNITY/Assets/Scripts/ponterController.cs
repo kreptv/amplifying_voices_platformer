@@ -54,6 +54,22 @@ public class ponterController : MonoBehaviour
             bulletScript bulletscript = bullet.GetComponent<bulletScript>();
             bulletscript.owner = transform.parent.tag;
         }
+        if(Input.GetMouseButtonDown(1) && Time.time > clickFinish)
+        {
+            Debug.Log("click 2 push ");
+            clickFinish = Time.time + clickCooldown;
+
+
+
+            Vector2 target = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
+            Vector2 myPos = new Vector2(transform.position.x, transform.position.y + 1);
+            Vector2 direction = target - myPos;
+
+            direction.Normalize();
+            int objectIndex = Random.Range(1, objectsSpawning.Length - 1);
+            GameObject push = Instantiate(objectsSpawning[1], projectileTransform.transform.position, Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg));
+            push.GetComponent<Rigidbody2D>().AddForce(10 * dir, ForceMode2D.Impulse);
+        }
     }
 
     private void FixedUpdate()

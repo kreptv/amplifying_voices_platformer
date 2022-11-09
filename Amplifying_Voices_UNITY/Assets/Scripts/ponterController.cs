@@ -34,7 +34,7 @@ public class ponterController : MonoBehaviour
       //Debug.Log(dir);
 
         if (Input.GetMouseButtonDown(0) && Time.time > clickFinish){
-            Debug.Log("click 1");
+            // Debug.Log("click 1");
             clickFinish = Time.time + clickCooldown;
             // ****** New stuff; gets rotation
             Vector2 target = Camera.main.ScreenToWorldPoint( new Vector2(Input.mousePosition.x,  Input.mousePosition.y) );
@@ -45,13 +45,14 @@ public class ponterController : MonoBehaviour
             //player.transform.position = norm;
             //player.GetComponent<Rigidbody2D>().AddForce(dir.normalized * Speed);
             int objectIndex = Random.Range(0, objectsSpawning.Length - 1);
-            Debug.Log(transform.position);
+            // Debug.Log(transform.position);
             GameObject bullet = Instantiate(objectsSpawning[objectIndex], projectileTransform.transform.position, Quaternion.Euler( 0, 0, Mathf.Atan2 ( direction.y, direction.x ) * Mathf.Rad2Deg ));//, soundParent.transform);
             //bullet.transform.forward = dir;
             //bullet.transform.rotation = Quaternion.LookRotation(dir);
 
             bullet.GetComponent<Rigidbody2D>().AddForce(10 * dir, ForceMode2D.Impulse);
-
+            bulletScript bulletscript = bullet.GetComponent<bulletScript>();
+            bulletscript.owner = transform.parent.tag;
         }
         if(Input.GetMouseButtonDown(1) && Time.time > clickFinish)
         {

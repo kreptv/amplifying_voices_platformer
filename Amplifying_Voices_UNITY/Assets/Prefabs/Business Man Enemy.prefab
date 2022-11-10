@@ -48,7 +48,7 @@ GameObject:
   m_Layer: 0
   m_Name: Business Man Enemy
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -66,6 +66,7 @@ Transform:
   m_Children:
   - {fileID: 8208594808814854723}
   - {fileID: 6712145507985498678}
+  - {fileID: 6103937366399687732}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -231,6 +232,78 @@ Transform:
   m_Father: {fileID: 6712145506434586129}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6712145507187609982
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6712145507602133881}
+    m_Modifications:
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013158094189575841, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: owner
+      value: 
+      objectReference: {fileID: 6712145507602133880}
+    - target: {fileID: 2013158094189575841, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: currentHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533976387984100652, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: m_Name
+      value: Hurtbox
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+--- !u!4 &6103937366399687732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+  m_PrefabInstance: {fileID: 6712145507187609982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6712145507274578476
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83fc89b2754228d4a9ff6e04b4c6588a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6115467197310675934, guid: 38e3b1f09f7e048d38f2f718b2c86810, type: 3}
+  player: {fileID: 0}
   objectsSpawning:
   - {fileID: 8891888677948832078, guid: c49d94d1dc586804b84df83f6816befb, type: 3}
   projectileTransform: {fileID: 5030037171048115157}
@@ -179,7 +179,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6823559715621540318
 MonoBehaviour:
@@ -201,7 +201,7 @@ MonoBehaviour:
   _screenColor: {r: 0, g: 0, b: 0, a: 1}
   _mainTexture: {fileID: 2800000, guid: 5811f39888ab444acb59bcd739385fd2, type: 3}
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   _renderOrder: 1
   _depthOffset: 0.00001
   _opacity: 1
@@ -301,7 +301,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2108572389488478734
 MonoBehaviour:
@@ -323,7 +323,7 @@ MonoBehaviour:
   _screenColor: {r: 0, g: 0, b: 0, a: 1}
   _mainTexture: {fileID: 2800000, guid: 5811f39888ab444acb59bcd739385fd2, type: 3}
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   _renderOrder: 3
   _depthOffset: 0.00001
   _opacity: 1
@@ -484,7 +484,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2085005866899251501
 MonoBehaviour:
@@ -506,7 +506,7 @@ MonoBehaviour:
   _screenColor: {r: 0, g: 0, b: 0, a: 1}
   _mainTexture: {fileID: 2800000, guid: 5811f39888ab444acb59bcd739385fd2, type: 3}
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   _renderOrder: 0
   _depthOffset: 0.00001
   _opacity: 1
@@ -606,7 +606,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1867529971308640404
 MonoBehaviour:
@@ -628,7 +628,7 @@ MonoBehaviour:
   _screenColor: {r: 0, g: 0, b: 0, a: 1}
   _mainTexture: {fileID: 2800000, guid: 5811f39888ab444acb59bcd739385fd2, type: 3}
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   _renderOrder: 4
   _depthOffset: 0.00001
   _opacity: 1
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 3594389374096473049}
   - component: {fileID: 3594389374096473050}
   - component: {fileID: 3594389374096473048}
-  - component: {fileID: 3594389374096473055}
+  - component: {fileID: 1983896882}
   m_Layer: 0
   m_Name: Camera Enemy
   m_TagString: Enemy
@@ -726,9 +726,9 @@ Transform:
   m_Children:
   - {fileID: 4835937580587374153}
   - {fileID: 5616560715863174084}
-  - {fileID: 6862831857475642964}
+  - {fileID: 690139771420235622}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3594389374096473050
 BoxCollider2D:
@@ -774,20 +774,29 @@ MonoBehaviour:
   xMax: 0
   yMin: 0
   yMax: 0
-  player: {fileID: 6115467197310675934, guid: 38e3b1f09f7e048d38f2f718b2c86810, type: 3}
+  player: {fileID: 0}
   camon: 0
---- !u!114 &3594389374096473055
-MonoBehaviour:
+--- !u!50 &1983896882
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3594389374096473051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 095ce8e73c048463ba5bcf769d96c7af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3890659150183089810
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,7 +925,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7832812942987272200
 MonoBehaviour:
@@ -938,7 +947,7 @@ MonoBehaviour:
   _screenColor: {r: 0, g: 0, b: 0, a: 1}
   _mainTexture: {fileID: 2800000, guid: 5811f39888ab444acb59bcd739385fd2, type: 3}
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   _renderOrder: 8
   _depthOffset: 0.00001
   _opacity: 0
@@ -1099,7 +1108,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5596382854705494093
 MonoBehaviour:
@@ -1121,7 +1130,7 @@ MonoBehaviour:
   _screenColor: {r: 0, g: 0, b: 0, a: 1}
   _mainTexture: {fileID: 2800000, guid: 5811f39888ab444acb59bcd739385fd2, type: 3}
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   _renderOrder: 5
   _depthOffset: 0.00001
   _opacity: 1
@@ -1221,7 +1230,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6391915779466944532
 MonoBehaviour:
@@ -1243,7 +1252,7 @@ MonoBehaviour:
   _screenColor: {r: 0, g: 0, b: 0, a: 1}
   _mainTexture: {fileID: 2800000, guid: 5811f39888ab444acb59bcd739385fd2, type: 3}
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   _renderOrder: 7
   _depthOffset: 0.00001
   _opacity: 1
@@ -1343,7 +1352,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6291052321591699465
 MonoBehaviour:
@@ -1365,7 +1374,7 @@ MonoBehaviour:
   _screenColor: {r: 0, g: 0, b: 0, a: 1}
   _mainTexture: {fileID: 2800000, guid: 5811f39888ab444acb59bcd739385fd2, type: 3}
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   _renderOrder: 6
   _depthOffset: 0.00001
   _opacity: 1
@@ -1530,7 +1539,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7820188321013053371
 MonoBehaviour:
@@ -1552,7 +1561,7 @@ MonoBehaviour:
   _screenColor: {r: 0, g: 0, b: 0, a: 1}
   _mainTexture: {fileID: 2800000, guid: 5811f39888ab444acb59bcd739385fd2, type: 3}
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   _renderOrder: 2
   _depthOffset: 0.00001
   _opacity: 1
@@ -1637,7 +1646,7 @@ GameObject:
   - component: {fileID: 4258377593774267622}
   - component: {fileID: 7467416642120586031}
   m_Layer: 0
-  m_Name: impactjamcamera
+  m_Name: CameraModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1718,7 +1727,7 @@ MonoBehaviour:
   _modelScreenColor: {r: 0, g: 0, b: 0, a: 0}
   _sortingLayerId: 0
   _sortingMode: 0
-  _sortingOrder: 0
+  _sortingOrder: 2
   CameraToFace: {fileID: 0}
   _drawOrderHandler: {fileID: 0}
   _opacityHandler: {fileID: 0}
@@ -1971,7 +1980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Angle X
   DisplayName: 
---- !u!1001 &6246056459470875422
+--- !u!1001 &1527061036
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2023,23 +2032,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2013158094189575841, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: owner
+      value: 
+      objectReference: {fileID: 3594389374096473051}
+    - target: {fileID: 2013158094189575841, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4258377593774267622}
+    - target: {fileID: 2013158094189575841, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
+      propertyPath: currentHealth
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2533976387984100652, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
       propertyPath: m_Name
       value: Hurtbox
       objectReference: {fileID: 0}
-    - target: {fileID: 5703848149540505369, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5703848149540505369, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.27
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
---- !u!4 &6862831857475642964 stripped
+--- !u!4 &690139771420235622 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 690139772409761098, guid: 948a62ec799c8f24ba5ffa7381a18e25, type: 3}
-  m_PrefabInstance: {fileID: 6246056459470875422}
+  m_PrefabInstance: {fileID: 1527061036}
   m_PrefabAsset: {fileID: 0}

@@ -19,7 +19,7 @@ public class health : MonoBehaviour
     // call this function to add a number to the character's health
     public int changeHealth(int change){
         if (type == "Player"){
-            animator.SetBool("IsKnockedBack", true);
+            StartCoroutine("Animate");
         }
         currentHealth += change;
         Debug.Log(owner + " health was changed to " + currentHealth);
@@ -28,6 +28,12 @@ public class health : MonoBehaviour
             defeated();
         }
         return currentHealth;
+    }
+
+    IEnumerator Animate(){
+      animator.SetBool("IsKnockedBack", true);
+      yield return new WaitForSeconds(1);
+      animator.SetBool("IsKnockedBack", false);
     }
 
     // Call this when the owner has no health and dies.

@@ -1,0 +1,84 @@
+{
+	"Version": 3,
+	"Meta": {
+		"Duration": 3.133,
+		"Fps": 30.0,
+		"Loop": true,
+		"AreBeziersRestricted": true,
+		"CurveCount": 3,
+		"TotalSegmentCount": 8,
+		"TotalPointCount": 21,
+		"UserDataCount": 0,
+		"TotalUserDataSize": 0
+	},
+	"Curves": [
+		{
+			"Target": "Parameter",
+			"Id": "ParamAngleY",
+			"Segments": [
+				0,
+				2,
+				1,
+				0.322,
+				2,
+				0.644,
+				-30,
+				0.967,
+				-30,
+				0,
+				3.133,
+				-30
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Id": "ParamBreath",
+			"Segments": [
+				0,
+				0,
+				1,
+				0.322,
+				0,
+				0.644,
+				1,
+				0.967,
+				1,
+				1,
+				1.122,
+				1,
+				1.278,
+				0,
+				1.433,
+				0,
+				1,
+				1.767,
+				0.779,
+				2.1,
+				1,
+				2.433,
+				1,
+				0,
+				3.133,
+				1
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Id": "Param",
+			"Segments": [
+				0,
+				0,
+				1,
+				0.322,
+				0,
+				0.644,
+				-30,
+				0.967,
+				-30,
+				0,
+				3.133,
+				-30
+			]
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "Angle X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "Angle Y"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "EyeL Open"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "Breath"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "props",
+			"Name": "props"
+		},
+		{
+			"Id": "cublicle",
+			"Name": "cublicle"
+		},
+		{
+			"Id": "elevator",
+			"Name": "elevator"
+		},
+		{
+			"Id": "houseplants",
+			"Name": "houseplants"
+		},
+		{
+			"Id": "window",
+			"Name": "window"
+		},
+		{
+			"Id": "button",
+			"Name": "button"
+		},
+		{
+			"Id": "frame",
+			"Name": "frame"
+		},
+		{
+			"Id": "houseplant1",
+			"Name": "houseplant1"
+		},
+		{
+			"Id": "houseplant2",
+			"Name": "houseplant2"
+		},
+		{
+			"Id": "Part",
+			"Name": "houseplant 3"
+		},
+		{
+			"Id": "houseplant4",
+			"Name": "houseplant4"
+		},
+		{
+			"Id": "inside",
+			"Name": "inside"
+		},
+		{
+			"Id": "doors",
+			"Name": "doors"
+		},
+		{
+			"Id": "insides",
+			"Name": "insides"
+		}
+	]
+}

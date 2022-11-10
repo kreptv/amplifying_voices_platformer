@@ -2,7 +2,7 @@ using UnityEngine;
 using Live2D.Cubism.Core;
 using Live2D.Cubism.Framework;
 
-public class cameraEnemy :  MonoBehaviour
+public class ObjectTrackingPlayerScript :  MonoBehaviour
 {
     public CubismModel model;
     public BoxCollider2D playerInRange;
@@ -17,6 +17,7 @@ public class cameraEnemy :  MonoBehaviour
 
     private void Start()
     {
+      player = GameObject.Find("Player");
       camon = false;
 
       xMin = playerInRange.bounds.min.x;
@@ -32,30 +33,23 @@ public class cameraEnemy :  MonoBehaviour
       var y = model.Parameters[1];
       var eyeOpen = model.Parameters[2];
 
+      px = player.transform.position.x;
+      py = player.transform.position.y;
+      var range1 = xMax - xMin;
+      var range2 = 30 - (-30);
+      px = (((px - xMin) * range2) / range1) -30;
+
+      range1 = yMax - yMin;
+      range2 = 30 - (-30);
+      py = (((py - yMin) * range2) / range1) -30;
+
+
+      x.Value = px;
+      y.Value = py;
+
       if (camon == true){
 
         eyeOpen.Value = 1f;
-
-
-        px = player.transform.position.x;
-        py = player.transform.position.y;
-        var range1 = xMax - xMin;
-        var range2 = 30 - (-30);
-        px = (((px - xMin) * range2) / range1) -30;
-
-        range1 = yMax - yMin;
-        range2 = 30 - (-30);
-        py = (((py - yMin) * range2) / range1) -30;
-
-
-        x.Value = px;
-        y.Value = py;
-
-
-
-
-
-
       }
 
       else {

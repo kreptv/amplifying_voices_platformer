@@ -3350,7 +3350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6140998c9c19c8f4aad6e4da5714a764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 77302459017668231}
+  player: {fileID: 6115467197310675934}
   objectsSpawning:
   - {fileID: 8891888677948832078, guid: c49d94d1dc586804b84df83f6816befb, type: 3}
   projectileTransform: {fileID: 6115467198002381481}

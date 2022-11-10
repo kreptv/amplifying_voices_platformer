@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1490662105715624715}
   - component: {fileID: 545083224535806509}
   - component: {fileID: 7535958853445258284}
-  - component: {fileID: 2009055784792394556}
+  - component: {fileID: 7408737368108424837}
   m_Layer: 0
   m_Name: elevator
   m_TagString: Untagged
@@ -43,7 +43,7 @@ Transform:
   - {fileID: 6858834382033698376}
   - {fileID: 2796999084672287692}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3007523906791850438
 MonoBehaviour:
@@ -193,7 +193,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2009055784792394556
+--- !u!114 &7408737368108424837
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

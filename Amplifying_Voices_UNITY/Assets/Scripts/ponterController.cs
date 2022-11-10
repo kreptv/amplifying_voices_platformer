@@ -15,6 +15,10 @@ public class ponterController : MonoBehaviour
     public GameObject[] objectsSpawning;
     public GameObject projectileTransform;
 
+    void Start(){
+        player = GameObject.Find("Player");
+    }
+
     // Update is called once per frame
     void Update()
     {

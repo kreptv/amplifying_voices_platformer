@@ -10824,6 +10824,7 @@ GameObject:
   - component: {fileID: 9022326852435681975}
   - component: {fileID: 9022326852435681974}
   - component: {fileID: 9022326852435681969}
+  - component: {fileID: 8506759153634336640}
   m_Layer: 0
   m_Name: NPC Prefab
   m_TagString: NPC
@@ -10846,7 +10847,7 @@ Transform:
   - {fileID: 2502464493708090194}
   - {fileID: 1807896447360915987}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &9022326852435681974
 Rigidbody2D:
@@ -10895,6 +10896,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.221493, y: 3.3096566}
   m_EdgeRadius: 0
+--- !u!114 &8506759153634336640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9022326852435681972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b0321f8caa95f4f8cc63070d0de084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9037651745040716096
 GameObject:
   m_ObjectHideFlags: 0

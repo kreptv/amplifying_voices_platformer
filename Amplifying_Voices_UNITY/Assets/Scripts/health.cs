@@ -22,9 +22,9 @@ public class health : MonoBehaviour
             StartCoroutine("Animate");
         }
         currentHealth += change;
-        Debug.Log(owner + " health was changed to " + currentHealth);
+        //Debug.Log(owner + " health was changed to " + currentHealth);
         if (currentHealth <= 0){
-            Debug.Log(owner + " is dead");
+            //Debug.Log(owner + " is dead");
             defeated();
         }
         return currentHealth;
@@ -43,7 +43,7 @@ public class health : MonoBehaviour
         if (type == "Enemy"){
             Destroy(owner);
         }else if(type == "Player"){
-            Debug.Log("GAME OVER");
+            //Debug.Log("GAME OVER");
         }
     }
 }

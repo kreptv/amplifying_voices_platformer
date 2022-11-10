@@ -27,7 +27,8 @@ public class ElevatorsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      elevators = new GameObject[elevatorEncapsulator.transform.childCount];
+        gm = GameObject.Find("Main Camera").GetComponent<GameManager>();
+        elevators = new GameObject[elevatorEncapsulator.transform.childCount];
 
       for (int i = 0; i < elevatorEncapsulator.transform.childCount; i++){
         elevators[i] = elevatorEncapsulator.transform.GetChild(i).gameObject;
@@ -37,7 +38,7 @@ public class ElevatorsManager : MonoBehaviour
         Debug.Log("There should be one elevator on each floor");
       }
 
-      currentFloor = 0;
+      currentFloor = gm.progress;
 
       for (int i = 1; i < floors.Length; i++){
           floors[i].SetActive(false);

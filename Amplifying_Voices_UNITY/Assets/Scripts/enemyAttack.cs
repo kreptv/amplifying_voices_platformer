@@ -13,6 +13,10 @@ public class enemyAttack : MonoBehaviour
     public GameObject[] objectsSpawning;
     public GameObject projectileTransform;
 
+    void Start(){
+        player = GameObject.Find("Player");
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -31,6 +35,8 @@ public class enemyAttack : MonoBehaviour
             int objectIndex = Random.Range(0, objectsSpawning.Length - 1);
             GameObject bullet = Instantiate(objectsSpawning[objectIndex], projectileTransform.transform.position, Quaternion.Euler( 0, 0, angle));
             bullet.GetComponent<Rigidbody2D>().AddForce(projectileSpeed * dir, ForceMode2D.Impulse);
+            bulletScript bulletscript = bullet.GetComponent<bulletScript>();
+            bulletscript.owner = transform.parent.tag;
         }
     }
 }

@@ -19,7 +19,7 @@ public class playerStats : MonoBehaviour
     // call this function to add a number to the coworkers(npcs) found by the player
     public int changeCoworkers(int change){
         currentCoworkers += change;
-        Debug.Log("Current Coworkers(NPCs)= " + currentCoworkers);
+        Debug.Log("NPCs = " + currentCoworkers);
         if (currentCoworkers >= levelRequirements[currentLevel]){
             currentLevel += 1;
             if (currentLevel >= levelRequirements.Length){

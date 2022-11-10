@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7334064185628670911}
   - component: {fileID: 7334064185628670904}
-  - component: {fileID: 1638222545}
+  - component: {fileID: 7334064185699648662}
   m_Layer: 0
   m_Name: Cublicle
   m_TagString: Untagged
@@ -60,7 +60,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.257509, y: 5.3023386}
   m_EdgeRadius: 0
---- !u!114 &1638222545
+--- !u!114 &7334064185699648662
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

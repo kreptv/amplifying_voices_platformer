@@ -17,7 +17,7 @@ public class ObjectTrackingPlayerScript :  MonoBehaviour
 
     private void Start()
     {
-      //player = GameObject.Find("Player");
+      player = GameObject.Find("Player");
       camon = false;
 
       xMin = playerInRange.bounds.min.x;

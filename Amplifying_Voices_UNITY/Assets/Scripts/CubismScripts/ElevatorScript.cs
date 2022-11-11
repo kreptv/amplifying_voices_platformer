@@ -20,10 +20,9 @@ public class ElevatorScript : MonoBehaviour
     public CubismDrawable door1; public CubismDrawable door2;
     public CubismDrawable doorframe;
 
-    private void Start()
-    {
-        player = GameObject.Find("Player");
-        gm = GameObject.Find("Main Camera").GetComponent<GameManager>();
+    void Start (){
+      player = GameObject.Find("/Player");
+      gm = GameObject.Find("/Main Camera").GetComponent<GameManager>();
     }
 
     public void setDoorsForeground(){

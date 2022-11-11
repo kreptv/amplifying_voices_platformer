@@ -37,8 +37,8 @@ public class settingMenu : MonoBehaviour
         for(int i = 0; i< itemsCount; i++ )
         {
            menuItems[i].trans.position = mainButtonPosition;
-           menuItems[i].OnEnable(false);
-           
+           menuItems[i].OnEnabled(false);
+
         }
     }
 
@@ -51,10 +51,10 @@ public class settingMenu : MonoBehaviour
             for(int i=0; i< itemsCount; i++)
             {
                 menuItems[i].trans.position = mainButtonPosition + spacing * (i + 1);
-                menuItems[i].OnEnable(true);
-                
+                menuItems[i].OnEnabled(true);
+
             }
-            
+
         }
         else
         {
@@ -65,11 +65,11 @@ public class settingMenu : MonoBehaviour
 
     void OnDestroy()
     {
-        mainButton.onClick.RemoveListener(ToggleMenu);    
+        mainButton.onClick.RemoveListener(ToggleMenu);
     }
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -13,10 +13,10 @@ public class settingMenuItem : MonoBehaviour
     {
         img = GetComponent<Image>();
         trans = transform;
-        OnEnable(false);
+        OnEnabled(false);
     }
 
-    public void OnEnable(bool isEnable)
+    public void OnEnabled(bool isEnable)
     {
         gameObject.SetActive(isEnable);
     }

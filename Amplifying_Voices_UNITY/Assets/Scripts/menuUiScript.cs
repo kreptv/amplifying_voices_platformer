@@ -39,12 +39,12 @@ public class menuUiScript : MonoBehaviour
     public void playBtn()
     {
 
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
     }
 
     public void quit()
     {
         Application.Quit();
     }
-    
+
 }

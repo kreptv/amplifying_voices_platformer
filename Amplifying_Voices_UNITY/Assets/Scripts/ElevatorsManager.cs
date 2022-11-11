@@ -72,7 +72,7 @@ public class ElevatorsManager : MonoBehaviour
       }
       if (movingPlayer){
         floors[currentFloor-startingFloor].SetActive(true);
-        float step = 2 * Time.deltaTime;
+        float step = 10 * Time.deltaTime;
         player.transform.position = Vector2.MoveTowards(player.transform.position, elevators[currentFloor-startingFloor].transform.position - new Vector3(0, 1f, 0), step);
         if (player.transform.position == elevators[currentFloor-startingFloor].transform.position - new Vector3(0, 1f, 0)) {
           elevators[currentFloor-startingFloor].GetComponent<Animator>().SetBool("IsOpeningUp", true);

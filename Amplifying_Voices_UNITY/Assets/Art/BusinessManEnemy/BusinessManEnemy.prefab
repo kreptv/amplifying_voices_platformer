@@ -1420,7 +1420,11 @@ Transform:
   - {fileID: 1104949940483075600}
   - {fileID: 1475008057858238980}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+<<<<<<< Updated upstream
+  m_RootOrder: 7
+=======
+  m_RootOrder: 4
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &337339802864353192
 MonoBehaviour:

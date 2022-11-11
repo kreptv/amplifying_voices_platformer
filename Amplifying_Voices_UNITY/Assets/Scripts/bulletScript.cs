@@ -10,7 +10,7 @@ public class bulletScript : MonoBehaviour
     SpriteRenderer b_sprite;
 
     public string owner = "";
-    int bulletDamage = -2;
+    int bulletDamage = -1;
 
     // Start is called before the first frame update
     void Start()

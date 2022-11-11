@@ -39,7 +39,8 @@ public class menuUiScript : MonoBehaviour
     public void playBtn()
     {
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Level1");
+        Time.timeScale = 1f;
     }
 
     public void quit()
@@ -47,4 +48,9 @@ public class menuUiScript : MonoBehaviour
         Application.Quit();
     }
 
+    public void QuitMainMenu()
+    {
+        SceneManager.LoadScene("UITest");
+    }
+    
 }

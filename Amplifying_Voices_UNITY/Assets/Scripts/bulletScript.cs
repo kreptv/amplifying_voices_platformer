@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bulletScript : MonoBehaviour
 {
-    float lifespan = 30.0f;
+    float lifespan = 3.0f;
     float spawnTime;
     float fadeSpeed = 0.01f;
     SpriteRenderer b_sprite;

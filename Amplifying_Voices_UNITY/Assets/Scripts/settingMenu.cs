@@ -36,7 +36,9 @@ public class settingMenu : MonoBehaviour
     {
         for(int i = 0; i< itemsCount; i++ )
         {
-            menuItems[i].trans.position = mainButtonPosition;
+           menuItems[i].trans.position = mainButtonPosition;
+           menuItems[i].OnEnable(false);
+           
         }
     }
 
@@ -49,6 +51,8 @@ public class settingMenu : MonoBehaviour
             for(int i=0; i< itemsCount; i++)
             {
                 menuItems[i].trans.position = mainButtonPosition + spacing * (i + 1);
+                menuItems[i].OnEnable(true);
+                
             }
             
         }

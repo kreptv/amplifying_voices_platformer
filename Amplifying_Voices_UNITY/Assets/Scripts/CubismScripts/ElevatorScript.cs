@@ -20,6 +20,12 @@ public class ElevatorScript : MonoBehaviour
     public CubismDrawable door1; public CubismDrawable door2;
     public CubismDrawable doorframe;
 
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        gm = GameObject.Find("Main Camera").GetComponent<GameManager>();
+    }
+
     public void setDoorsForeground(){
       door1.GetComponent<CubismRenderer>().LocalSortingOrder = 4;
       door2.GetComponent<CubismRenderer>().LocalSortingOrder = 4;

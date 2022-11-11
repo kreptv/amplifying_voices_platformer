@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71995de48acb4635986e6b48aadadf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  model: {fileID: 0}
+  model: {fileID: 6451454869139203460}
   playerInRange: {fileID: 6712145507602133882}
   xMin: 0
   xMax: 0

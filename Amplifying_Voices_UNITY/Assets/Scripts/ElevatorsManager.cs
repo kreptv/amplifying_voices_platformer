@@ -28,6 +28,9 @@ public class ElevatorsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("/Player");
+        gm = GameObject.Find("/Main Camera").GetComponent<GameManager>();
+
         startingFloor = currentFloor;
         gm = GameObject.Find("Main Camera").GetComponent<GameManager>();
         elevators = new GameObject[elevatorEncapsulator.transform.childCount];

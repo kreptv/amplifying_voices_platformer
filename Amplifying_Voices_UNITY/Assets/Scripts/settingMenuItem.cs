@@ -6,7 +6,7 @@ public class settingMenuItem : MonoBehaviour
 {
     [HideInInspector] public Image img;
     [HideInInspector] public Transform trans;
-    
+
     // Start is called before the first frame update
 
     private void Awake()

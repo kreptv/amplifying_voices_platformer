@@ -46,5 +46,10 @@ public class menuUiScript : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("UITest");
+    }
     
 }

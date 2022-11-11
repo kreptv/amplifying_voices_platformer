@@ -1,0 +1,75 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "Doors"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "DownLightOn"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "UpLightOn"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "props",
+			"Name": "props"
+		},
+		{
+			"Id": "cublicle",
+			"Name": "cublicle"
+		},
+		{
+			"Id": "elevator",
+			"Name": "elevator"
+		},
+		{
+			"Id": "houseplants",
+			"Name": "houseplants"
+		},
+		{
+			"Id": "window",
+			"Name": "window"
+		},
+		{
+			"Id": "button",
+			"Name": "button"
+		},
+		{
+			"Id": "frame",
+			"Name": "frame"
+		},
+		{
+			"Id": "houseplant2",
+			"Name": "houseplant1"
+		},
+		{
+			"Id": "Part",
+			"Name": "houseplant2"
+		},
+		{
+			"Id": "houseplant4",
+			"Name": "houseplant3"
+		},
+		{
+			"Id": "inside",
+			"Name": "inside"
+		},
+		{
+			"Id": "doors",
+			"Name": "doors"
+		},
+		{
+			"Id": "insides",
+			"Name": "insides"
+		}
+	]
+}

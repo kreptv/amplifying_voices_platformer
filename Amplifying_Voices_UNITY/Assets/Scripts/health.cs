@@ -19,15 +19,21 @@ public class health : MonoBehaviour
     // call this function to add a number to the character's health
     public int changeHealth(int change){
         if (type == "Player"){
-            animator.SetBool("IsKnockedBack", true);
+            StartCoroutine("Animate");
         }
         currentHealth += change;
-        Debug.Log(owner + " health was changed to " + currentHealth);
+        //Debug.Log(owner + " health was changed to " + currentHealth);
         if (currentHealth <= 0){
-            Debug.Log(owner + " is dead");
+            //Debug.Log(owner + " is dead");
             defeated();
         }
         return currentHealth;
+    }
+
+    IEnumerator Animate(){
+      animator.SetBool("IsKnockedBack", true);
+      yield return new WaitForSeconds(1);
+      animator.SetBool("IsKnockedBack", false);
     }
 
     // Call this when the owner has no health and dies.
@@ -37,7 +43,7 @@ public class health : MonoBehaviour
         if (type == "Enemy"){
             Destroy(owner);
         }else if(type == "Player"){
-            Debug.Log("GAME OVER");
+            //Debug.Log("GAME OVER");
         }
     }
 }

@@ -30,7 +30,7 @@ public class playerMovement : MonoBehaviour
       Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
       Vector3 dir = (Input.mousePosition - pos).normalized;
       /****** FOR PLAYER HEAD TRACKING ******/
-      var x = playerModel.Parameters[8];
+      /*var x = playerModel.Parameters[8];
       var y = playerModel.Parameters[9];
 
       var range1 = 1 - (-1);
@@ -43,7 +43,7 @@ public class playerMovement : MonoBehaviour
       } else {
         x.Value = -((((dir.x - (-1)) * range3) / range1) -0);
         y.Value = (((dir.y - (-1)) * range2) / range1) -30;
-      }
+      }*/
 
       //Debug.Log(x.Value);
       //Debug.Log(y.Value);
@@ -55,9 +55,10 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+      if (gm.bindMovement){return;}
 
 
-      if (Input.GetAxis("Horizontal") > 0.1 /*&& (transform.position.x < gm.xMax-7)*/){
+      if (Input.GetAxis("Horizontal") > 0.1 && (transform.position.x < gm.xMax-7)){
         body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
         animator.SetBool("IsRunning", true);
         if (!facingRight){
@@ -65,7 +66,7 @@ public class playerMovement : MonoBehaviour
           transform.localScale = new Vector3(1,1,1);
           headWrapper.transform.localScale = new Vector3(1,1,1);
         }
-      } else if (Input.GetAxis("Horizontal") < -0.1 /*&& (transform.position.x > gm.xMin+7)*/){
+      } else if (Input.GetAxis("Horizontal") < -0.1 && (transform.position.x > gm.xMin+7)){
         body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
         animator.SetBool("IsRunning", true);
           if (facingRight){

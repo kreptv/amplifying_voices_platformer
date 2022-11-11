@@ -15,7 +15,7 @@ public class pushScript : MonoBehaviour
     void Start()
     {
         spawnTime = Time.time;
-        Destroy(gameObject, lifespan);
+        /*Destroy(gameObject, lifespan);*/
         b_sprite = GetComponent<SpriteRenderer>();
     }
 
